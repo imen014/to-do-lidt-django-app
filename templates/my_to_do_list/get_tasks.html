@@ -1,0 +1,19 @@
+{% extends 'my_to_do_list/layout.html' %}
+
+
+{% block content %}
+
+<ul>
+{% for task in tasks %}
+<li>
+task -title : {{ task.task_title }}
+task -content : {{ task.task_content }}
+task -creator_email : {{ task.creator_email }}
+
+
+</li>
+
+{% endfor %}
+</ul>
+
+{%  endblock %}

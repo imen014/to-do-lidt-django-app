@@ -1,0 +1,16 @@
+{% extends 'my_to_do_list/layout.html' %}
+
+
+{% block content %}
+<form action="{% url 'show-form' %}" method="post">
+{% csrf_token %}
+{{ myform }}
+
+
+
+<input type="submit" />
+</form>
+
+{{ message }}
+
+{%  endblock %}
